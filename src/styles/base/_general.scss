@@ -2,6 +2,29 @@ h1, h2, h3, h4, h5, h6, ul {
     margin: 0;
     padding: 0;
 }
+p{
+    margin:0;
+    font-size: rem(26);
+    line-height: rem(28);
+    @include r (1040){
+        font-size: rem(23);
+        line-height: rem(25);
+    }
+    @include r (1024){
+        font-size: rem(31);
+        line-height: rem(29);
+    }
+    @include r (768){
+        font-size: rem(25);
+    }
+
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: $black;
+}
 
 a{
     text-decoration: none;
@@ -18,3 +41,7 @@ a:hover{
 .icon-svg:hover{
     fill: $blue;
 }
+// img{
+//     width: 100%;
+//     height: auto;
+// }

@@ -1,0 +1,10 @@
+.column {
+    &__50 {
+        width:50%;
+        @include r (1040){
+            width: 100%;
+        }
+    }
+
+
+}

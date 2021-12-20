@@ -1,14 +1,22 @@
 import Mmenu from 'mmenu-js';
 
-(function() {
-	new Mmenu( "#menu", {
+(function () {
+	new Mmenu("#menu", {
 		"extensions": [
-		"pagedim-black",
-		"position-front"
+			"pagedim-black",
+			"position-front",
+			"theme-dark",
 		],
 		"navbar": {
-			"title": "title",
+			"title": "#copp.",
 			"sticky": false
+
 		},
+		"navbars": [{
+			"position": "top",
+			"content": [
+				"searchfield"
+			]
+		}]
 	});
 })();
