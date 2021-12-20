@@ -1,7 +1,10 @@
 .popular-cards {
     display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 
     &__card {
         background: #000;
+        border: 1px solid #fff;
+        color: #fff;
     }
 }
