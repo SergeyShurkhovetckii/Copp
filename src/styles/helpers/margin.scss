@@ -1,0 +1,22 @@
+.mar{
+    &__150{
+        margin-top:rem(150);
+        @include r (1040){
+            margin-top: rem(100);
+        }
+        @include r (768){
+            margin-top: rem(0);
+        }
+    }
+    &__120{
+        margin-top:rem(120);
+        @include r (1040){
+            margin-top: rem(60);
+        }
+        @include r (768){
+            margin-top: rem(30);
+        }
+    }
+}
+
+
