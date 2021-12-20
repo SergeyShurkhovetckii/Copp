@@ -1,0 +1,56 @@
+.header {
+    &__cart {}
+
+    &__icons {
+        display:flex;
+        justify-content: space-between;
+        gap: rem(30);
+
+    }
+
+    &__logo {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 36px;
+        color: #C8C8C8;
+        text-transform: uppercase;
+    }
+
+    &__menu {
+        display:flex;
+        justify-content: space-between;
+        gap:rem(43);
+        @include r (1040){
+            display: none;
+        }
+    }
+
+    &__row {
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-top: rem(36);
+        @include r (1040){
+            padding-top:rem(18);
+        }
+    }
+    &__user {}
+
+    &__link {
+        font-weight: 500;
+        font-size: rem(22);
+        line-height: rem(36);
+        color:black;
+        &--active {
+            font-weight:800;
+            border-bottom: 2px solid #0077C0;
+        }
+    }
+    &__burger{
+        display:none;
+        @include r (1040){
+            display: block;
+        }
+    }
+}
