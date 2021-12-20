@@ -1,8 +1,6 @@
 .header {
-    &__cart {}
-
     &__icons {
-        display:flex;
+        display: flex;
         justify-content: space-between;
         gap: rem(30);
 
@@ -17,39 +15,48 @@
         text-transform: uppercase;
     }
 
+    &__logo:hover {
+        color: $black;
+        transition: all 0.6s;
+    }
+
     &__menu {
-        display:flex;
+        display: flex;
         justify-content: space-between;
-        gap:rem(43);
-        @include r (1040){
+        gap: rem(43);
+
+        @include r (1040) {
             display: none;
         }
     }
 
     &__row {
-        display:flex;
+        display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
         padding-top: rem(36);
-        @include r (1040){
-            padding-top:rem(18);
+
+        @include r (1040) {
+            padding-top: rem(18);
         }
     }
-    &__user {}
 
     &__link {
         font-weight: 500;
         font-size: rem(22);
         line-height: rem(36);
-        color:black;
+        color: black;
+
         &--active {
-            font-weight:800;
+            font-weight: 800;
             border-bottom: 2px solid #0077C0;
         }
     }
-    &__burger{
-        display:none;
-        @include r (1040){
+
+    &__burger {
+        display: none;
+
+        @include r (1040) {
             display: block;
         }
     }
