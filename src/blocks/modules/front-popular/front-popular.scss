@@ -1,10 +1,65 @@
 .popular-cards {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: (1fr rem(274) 1fr);
+    grid-gap: rem(44);
+    max-width: rem(898);
+    margin: 0 auto;
+
+
+
 
     &__card {
-        background: #000;
+        background: #fff;
         border: 1px solid #fff;
-        color: #fff;
+        box-shadow: 4px 24px 60px rgba(109, 141, 173, 0.1);
+        border-radius: rem(25);
+        grid-row: rem(274);
+    }
+
+}
+
+.item-big {
+    padding: rem(25);
+    grid-row: span 2;
+}
+
+.item-small {
+    padding: rem(20);
+    grid-row: span 1;
+}
+
+
+.card {
+    &__col {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    &__name {
+        padding-top: rem(54);
+    }
+
+    &__pic {
+        text-align: center;
+
+        &--big {
+            min-width: rem(219);
+            height: rem(311);
+        }
+
+        &--small {
+            min-width: rem(212);
+            height: rem(168);
+        }
+
+    }
+
+    &__price {
+        font-weight: 500;
+        font-size: rem(25);
+        line-height: rem(34);
+        color: #BABABA;
+        padding-top: rem(1);
     }
 }

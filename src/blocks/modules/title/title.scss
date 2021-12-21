@@ -33,6 +33,13 @@
             font-size: rem(28);
         }
     }
+    &--small{
+        font-weight: 500;
+        font-size: rem(28);
+        line-height: rem(34);
+    }
+
+    
     &--center {
         text-align:center;
     }
