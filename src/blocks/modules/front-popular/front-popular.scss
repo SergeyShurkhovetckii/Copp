@@ -1,4 +1,5 @@
 .popular-cards {
+    padding-bottom: rem(120);
     display: grid;
     grid-template-columns: (1fr 1fr 1fr);
     gap: rem(40);
@@ -25,8 +26,6 @@
 
         &--active {
             transition: all 0.7s;
-            background: #1D242B;
-            border: 1px solid #1D242B;
             -webkit-box-shadow: -3px 10px 33px 16px rgba(29, 36, 43, 0.2);
             -moz-box-shadow: -3px 10px 33px 16px rgba(29, 36, 43, 0.2);
             box-shadow: -3px 10px 33px 16px rgba(29, 36, 43, 0.2);
