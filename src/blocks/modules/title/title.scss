@@ -39,9 +39,11 @@
         line-height: rem(34);
     }
 
-    
+
     &--center {
         text-align:center;
     }
-    
+    &--white{
+        color: #fff;
+    }
 }

@@ -6,13 +6,13 @@
         for (let i = 0; i < card.length && i < name.length; i++) {
             card[i].addEventListener('mouseover', () => {
                 card[i].classList.add('popular-cards__card--active');
-                name[i].classList.add('card__name--active');
+                name[i].classList.add('title--white');
 
                 console.log(card[i]);
             });
             card[i].addEventListener('mouseout', () => {
                 card[i].classList.remove('popular-cards__card--active');
-                name[i].classList.remove('card__name--active');
+                name[i].classList.remove('title--white');
 
             });
         };
