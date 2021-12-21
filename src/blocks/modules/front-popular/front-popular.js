@@ -1,13 +1,20 @@
-modules.define('front-popular', ['i-bem-dom'], function(provide, bemDom) {
+(function () {
+    document.addEventListener('DOMContentLoaded', () => {
+        let card = document.querySelectorAll('[data-card]');
+        let name = document.querySelectorAll('[data-name]');
 
-provide(bemDom.declBlock(this.name, {
-    onSetMod: {
-        js: {
-            inited: function() {
-                
-            }
-        }
-    }
-}));
+        for (let i = 0; i < card.length && i < name.length; i++) {
+            card[i].addEventListener('mouseover', () => {
+                card[i].classList.add('popular-cards__card--active');
+                name[i].classList.add('card__name--active');
 
-});
+                console.log(card[i]);
+            });
+            card[i].addEventListener('mouseout', () => {
+                card[i].classList.remove('popular-cards__card--active');
+                name[i].classList.remove('card__name--active');
+
+            });
+        };
+    });
+})();

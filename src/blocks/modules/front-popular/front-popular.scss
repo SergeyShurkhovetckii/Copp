@@ -1,39 +1,56 @@
 .popular-cards {
     display: grid;
     grid-template-columns: (1fr 1fr 1fr);
-    grid-gap: rem(44);
+    gap: rem(40);
+    row-gap: rem(33);
     max-width: rem(898);
     margin: 0 auto;
-    @include r (1040){
+
+    @include r (1040) {
         grid-template-columns: (1fr 1fr);
         grid-gap: rem(22);
     }
-    @include r (768){
+
+    @include r (768) {
         grid-template-columns: (1fr);
-        
+
     }
-    
+
 
     &__card {
         background: #fff;
         border: 1px solid #fff;
         box-shadow: 4px 24px 60px rgba(109, 141, 173, 0.1);
         border-radius: rem(25);
-        grid-row: rem(274);
+
+        &--active {
+            transition: all 0.7s;
+            background: #1D242B;
+            border: 1px solid #1D242B;
+            -webkit-box-shadow: -3px 10px 33px 16px rgba(29, 36, 43, 0.2);
+            -moz-box-shadow: -3px 10px 33px 16px rgba(29, 36, 43, 0.2);
+            box-shadow: -3px 10px 33px 16px rgba(29, 36, 43, 0.2);
+        }
+    }
+}
+
+
+
+.item {
+    padding: rem(20);
+
+    &__big {
+        grid-row: span 2;
+
+        @include r (768) {
+            grid-row: span 1;
+        }
     }
 
+    &__small {
+        grid-row: span 1;
+    }
 }
-
-.item-big {
-    padding: rem(25);
-    grid-row: span 2;
-}
-
-.item-small {
-    padding: rem(20);
-    grid-row: span 1;
-}
-
 
 .card {
     &__col {
@@ -43,7 +60,11 @@
     }
 
     &__name {
-        padding-top: rem(54);
+        padding-top: rem(40);
+
+        &--active {
+            color: #fff;
+        }
     }
 
     &__pic {
@@ -57,6 +78,11 @@
         &--small {
             min-width: rem(212);
             height: rem(168);
+
+            @include r (768) {
+                min-width: rem(219);
+                height: rem(311);
+            }
         }
 
     }
