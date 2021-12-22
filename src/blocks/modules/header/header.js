@@ -28,7 +28,7 @@ import Mmenu from 'mmenu-js';
 
     if (header&&logo) {
         window.addEventListener('scroll', function () {
-            if (window.scrollY > 0) {
+            if (window.scrollY > 20) {
                 header.classList.add('header--fixed');
 				logo.classList.add('header__logo--fixed');
 

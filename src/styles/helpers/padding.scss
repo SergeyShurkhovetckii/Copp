@@ -1,0 +1,8 @@
+.pd{
+    &--65{
+        padding-top: rem(65);
+        @include r (768){
+            padding-top: rem(30);
+        }
+    }
+}
