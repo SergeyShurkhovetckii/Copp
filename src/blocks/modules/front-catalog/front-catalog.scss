@@ -8,7 +8,7 @@
             grid-gap: rem(15);
         }
     
-        @include r (425) {
+        @include r (428) {
             grid-template-columns: (1fr);
     
         }
