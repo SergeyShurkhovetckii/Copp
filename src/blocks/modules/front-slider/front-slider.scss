@@ -21,6 +21,7 @@
         gap:rem(124);
         @include r (1040){
             flex-wrap: wrap;
+            gap:rem(0);
         }
     }
     &__col{
@@ -34,6 +35,12 @@
             padding-top: rem(23);
             padding-bottom: rem(35);
         }
+    }
+    &__title:after {
+        content: "";
+       border: 4px solid #0077C0;
+       transform: rotate(90deg);
+
     }
     &__bg{
         background-color:#000;
