@@ -11,7 +11,7 @@
         padding : 20px 40px 20px 40px ;
         width:calc(100% / 12 * 3 );
         @include r (768){
-                width: auto;
+                // width: auto;
             // Размер кнопки добавить 
         }
     }
@@ -35,12 +35,6 @@
             padding-top: rem(23);
             padding-bottom: rem(35);
         }
-    }
-    &__title:after {
-        content: "";
-       border: 4px solid #0077C0;
-       transform: rotate(90deg);
-
     }
     &__bg{
         background-color:#000;

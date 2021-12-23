@@ -19,6 +19,12 @@
         box-shadow: 4px 24px 60px rgba(109, 141, 173, 0.1);
         border-radius: rem(25);
     }
+
+}
+.front-catalog__item--active{
+    -webkit-box-shadow: -6px 24px 40px -9px rgba(0, 119, 192, 0.2);
+    -moz-box-shadow: -6px 24px 40px -9px rgba(0, 119, 192, 0.2);
+    box-shadow: -6px 24px 40px -9px rgba(0, 119, 192, 0.2);
 }
 
 .catalog-item {
