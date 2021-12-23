@@ -77,16 +77,17 @@
         &--big {
             min-width: rem(219);
             height: rem(311);
+
+            @include r (768) {
+                height: rem(127);
+                min-width: rem(127);
+            }
         }
 
         &--small {
             min-width: rem(212);
             height: rem(168);
 
-            @include r (768) {
-                min-width: rem(219);
-                height: rem(311);
-            }
         }
 
     }
